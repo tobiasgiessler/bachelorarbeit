@@ -1,3 +1,5 @@
+% !TEX root =../main.tex
+
 \documentclass[%
 	%pdftex,%				PDFTex verwenden
 	a4paper,%				A4 Papier
@@ -26,3 +28,31 @@
 %\usepackage{times}
 \usepackage{palatino}
 
+%
+% Paket um Grafiken einbetten zu können
+%
+\usepackage{graphicx}
+
+% 
+% Paket für große Tabellen
+%
+\usepackage{longtable}
+\usepackage{tabularx}
+% Damit kann man an Stelle des p{BREITE} einfach L{Breite} für linksbündige,
+% C{BREITE} für zentrierte, und R{BREITE} für rechtsbündige Textausrichtung
+% verwenden.
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % linksbündig mit Breitenangabe
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % zentriert mit Breitenangabe
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % rechtsbündig mit Breitenangabe
+% Um innerhalb einer einzelnen Spalte eine andere Textausrichtung als die
+% vordefinierte nutzen zu können, werden folgende Befehle definiert.
+% Jetzt kann man innerhalb der gewünschten Spalte folgende Befehle vor den Text schreiben:
+%    \ctab = zentrierte Ausrichtung
+%    \rtab = rechtsbündige Ausrichtung
+%    \ltab = linksbündige Ausrichtung
+\newcommand{\ltab}{\raggedright\arraybackslash} % Tabellenabschnitt linksbündig
+\newcommand{\ctab}{\centering\arraybackslash} % Tabellenabschnitt zentriert
+\newcommand{\rtab}{\raggedleft\arraybackslash} % Tabellenabschnitt rechtsbündig
+%
+% Paket um Text in Tabellen drehen zu können
+\usepackage{rotating}
