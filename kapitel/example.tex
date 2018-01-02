@@ -28,12 +28,11 @@ Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kan
 
 \section{Abbildungen}
 
-In der Abbildung \ref{fig:wursthund} ist der so genannte Wursthund in seiner natürlichen Umgebung zu sehen.
+In der Abbildung \vref{fig:wursthund} ist der so genannte Wursthund in seiner natürlichen Umgebung zu sehen.
 
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[width=10cm]{bilder/wursthund.jpg}
-	\end{center}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=10cm]{bilder/wursthund.jpg}
 	\caption{Wursthund}
 	\label{fig:wursthund}
 \end{figure}
@@ -42,8 +41,20 @@ In der Abbildung \ref{fig:wursthund} ist der so genannte Wursthund in seiner nat
 
 Eine kleine Tabelle, welche nicht durch Seitenumbrüche aufgetrennt werden kann, ist in Tabelle \ref{tab:kleine-tabelle} zu sehen.
 
-\begin{center}
-\begin{table}[ht]
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lcr}
+                   & Zeiten       & \\
+Ziel            & Abfahrt    & Dauer \\
+Frankfurt & stündlich & 3:20 \\
+Berlin        & stündlich & 5:40 \\
+Hamburg & alle 5\,h   & 5:20 \\
+\end{tabular}
+\caption{Tabelle mit variabler Spaltenbreite}
+\end{table}
+
+\begin{table}[htbp]
+\centering
 \begin{tabular}{| p{3.5cm} | p{10.5cm} |}
 \hline
 \textbf{Spalte 1}& \textbf{Spalte 2}\\
@@ -62,7 +73,6 @@ Daten& Daten\\
 \caption{Kleine Tabelle}
 \label{tab:kleine-tabelle}
 \end{table}
-\end{center}
 
 Eine lange Tabelle, welche sich über mehrere Seiten erstrecken kann ist in Tabelle \ref{tab:lange-tabelle} dargestellt.
 
@@ -101,5 +111,19 @@ Eine lange Tabelle, welche sich über mehrere Seiten erstrecken kann ist in Tabe
 \caption{Lange Tabelle}
 \label{tab:lange-tabelle}
 \end{longtable}
+
+\section{Verweise}
+
+Es existieren mehrere Arten auf Objekte zu verweisen.
+
+Abbildungsnummer: \ref{fig:wursthund}
+
+Abbildungsnummer und relative Seitenzahl: \vref{fig:wursthund}
+
+Seitenzahl: \pageref{fig:wursthund}
+
+Relative Seitenzahl: \vpageref{fig:wursthund}
+
+\section{Beschreibungsumgebung}
 
 \section{Quellenangabe}
