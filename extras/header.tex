@@ -1,11 +1,10 @@
 % !TEX root =../main.tex
 
 \documentclass[%
-	%pdftex,%				PDFTex verwenden
 	a4paper,%				A4 Papier
 	oneside,%				einseitig
-	bibliography=totoc,%	Literaturverzeichnis einfügen
-	%bibtotocnumbered,% 	Literaturverzeichnis einfügen nummeriert
+	bibliography=totoc,%		Literaturverzeichnis einfügen
+	%bibtotocnumbered,% 		Literaturverzeichnis einfügen nummeriert
 	listof=totoc,%			Verzeichnisse einbinden in toc
 	index=totoc,%			Index ins Verzeichnis einfügen
 	parskip=half,%			europäischer Satz mit abstand zwischen Absätzen
@@ -13,8 +12,7 @@
 	chapterprefix,%			Ausgabe von Kapitel und Anhang
 	headsepline,%			Linie nach Kopfzeile
 	%footsepline,%			Linie vor Fußzeile
-	numbers=noenddot,%		Nummern ohne abschließenden Punkt
-	12pt%					grössere Schrift, besser lesbar am Bildschirm
+	12pt,%					grössere Schrift, besser lesbar am Bildschirm
 ]{scrbook}
 
 \usepackage[ngerman]{babel}
@@ -39,10 +37,11 @@
 \usepackage[ngerman]{varioref}
 
 % 
-% Paket für große Tabellen
+% Pakete für Tabellen
 %
 \usepackage{longtable}
 \usepackage{tabularx}
+\usepackage{booktabs}
 % Damit kann man an Stelle des p{BREITE} einfach L{Breite} für linksbündige,
 % C{BREITE} für zentrierte, und R{BREITE} für rechtsbündige Textausrichtung
 % verwenden.
@@ -58,6 +57,3 @@
 \newcommand{\ltab}{\raggedright\arraybackslash} % Tabellenabschnitt linksbündig
 \newcommand{\ctab}{\centering\arraybackslash} % Tabellenabschnitt zentriert
 \newcommand{\rtab}{\raggedleft\arraybackslash} % Tabellenabschnitt rechtsbündig
-%
-% Paket um Text in Tabellen drehen zu können
-\usepackage{rotating}

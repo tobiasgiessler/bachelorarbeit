@@ -39,75 +39,67 @@ In der Abbildung \vref{fig:wursthund} ist der so genannte Wursthund in seiner na
 
 \section{Tabellen}
 
-Eine kleine Tabelle, welche nicht durch Seitenumbrüche aufgetrennt werden kann, ist in Tabelle \ref{tab:kleine-tabelle} zu sehen.
+Ein Beispiel für eine Tabelle, mit variabler Spaltenbreite, ist durch Tabelle \ref{tab:variable-breite} dargestellt.
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{lcr}
-                   & Zeiten       & \\
-Ziel            & Abfahrt    & Dauer \\
-Frankfurt & stündlich & 3:20 \\
-Berlin        & stündlich & 5:40 \\
-Hamburg & alle 5\,h   & 5:20 \\
+\begin{tabular}{l l l}
+\toprule
+Ziel            & Abfahrt      & Dauer \\
+\midrule
+Frankfurt       & stündlich    & 3:20 \\
+Berlin          & stündlich    & 5:40 \\
+Hamburg         & alle 5\,h    & 5:20 \\
+\bottomrule
 \end{tabular}
 \caption{Tabelle mit variabler Spaltenbreite}
+\label{tab:variable-breite}
 \end{table}
+
+Ein Beispiel für eine Tabelle, mit fester Spaltenbreite, ist durch Tabelle \ref{tab:feste-breite} dargestellt.
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{| p{3.5cm} | p{10.5cm} |}
-\hline
-\textbf{Spalte 1}& \textbf{Spalte 2}\\
-\hline
-\textbf{Eintrag 1}& \textbf{Eintrag 2}\\
-Daten& Daten\\
-Daten& Daten\\
-Daten& Daten\\
-\hline
-\textbf{Eintrag 1}& \textbf{Eintrag 2}\\
-Daten& Daten\\
-Daten& Daten\\
-Daten& Daten\\
-\hline
+\begin{tabular}{p{3.5cm} p{5.5cm}}
+\toprule
+\textbf{Spalte 1}  & \textbf{Spalte 2}\\
+\midrule
+\textbf{Eintrag 1} & \textbf{Eintrag 2}\\
+Daten              & Daten\\
+Daten              & Daten\\
+Daten              & Daten\\
+\midrule
+\textbf{Eintrag 1} & \textbf{Eintrag 2}\\
+Daten              & Daten\\
+Daten              & Daten\\
+Daten              & Daten\\
+\bottomrule
 \end{tabular}
 \caption{Kleine Tabelle}
-\label{tab:kleine-tabelle}
+\label{tab:feste-breite}
 \end{table}
 
 Eine lange Tabelle, welche sich über mehrere Seiten erstrecken kann ist in Tabelle \ref{tab:lange-tabelle} dargestellt.
 
-\begin{longtable}{|p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
-\hline
+\begin{longtable}{p{2cm} p{2cm} p{2cm} p{2cm} p{2cm}}
+\toprule
 \textbf{\O min}& \textbf{\O max}& \textbf{Wert 1}& \textbf{Wert 2}& \textbf{Wert 3}\\
-\hline
-6& 10& 56& 100& 20,00\\
-\hline
-6& 10& 100& 150& 20,00\\
-\hline
-6& 10& 150& 200& 20,00\\
-\hline
-6& 10& 200& 250& 20,00\\
-\hline
-6& 10& 250& 300& 20,00\\
-\hline
-6& 10& 300& 350& 20,00\\
-\hline
-6& 10& 350& 400& 20,00\\
-\hline
-10& 14& 63& 100& 20,00\\
-\hline
+\midrule
+ 6& 10&  56& 100& 20,00\\
+ 6& 10& 100& 150& 20,00\\
+ 6& 10& 150& 200& 20,00\\
+ 6& 10& 200& 250& 20,00\\
+ 6& 10& 250& 300& 20,00\\
+ 6& 10& 300& 350& 20,00\\
+ 6& 10& 350& 400& 20,00\\
+10& 14&  63& 100& 20,00\\
 10& 14& 100& 150& 20,00\\
-\hline
 10& 14& 150& 200& 20,00\\
-\hline
 10& 14& 200& 250& 20,00\\
-\hline
 10& 14& 250& 300& 20,00\\
-\hline
 10& 14& 300& 350& 20,00\\
-\hline
 10& 14& 350& 400& 20,00\\
-\hline
+\bottomrule
 \caption{Lange Tabelle}
 \label{tab:lange-tabelle}
 \end{longtable}
