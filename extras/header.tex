@@ -15,6 +15,9 @@
 	12pt,%					grössere Schrift, besser lesbar am Bildschirm
 ]{scrbook}
 
+%
+% Unterstützung für deutsche Sprache
+%
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -57,3 +60,8 @@
 \newcommand{\ltab}{\raggedright\arraybackslash} % Tabellenabschnitt linksbündig
 \newcommand{\ctab}{\centering\arraybackslash} % Tabellenabschnitt zentriert
 \newcommand{\rtab}{\raggedleft\arraybackslash} % Tabellenabschnitt rechtsbündig
+
+%
+% Selbst definierte Befehle
+%
+\newcommand{\code}[1]{\texttt{#1}}
