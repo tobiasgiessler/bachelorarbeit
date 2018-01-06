@@ -14,6 +14,7 @@ ssh-keygen
 ```
 sudo apt install texlive-full
 sudo apt install texworks
+sudo apt install biber
 sudo ln -s /usr/share/hunspell/de_DE.dic /usr/share/myspell/dicts/
 sudo ln -s /usr/share/hunspell/de_DE.aff /usr/share/myspell/dicts/
 ```
