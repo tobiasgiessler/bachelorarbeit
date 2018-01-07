@@ -189,12 +189,71 @@ Relative Seitenzahl: \vpageref{fig:wursthund}
 
 \section{Fußnoten}
 
-Zu diesem Satz existiert eine Fußnote. Sieh nach, ob du sie finden kannst.\footnote{Großartig! Du hast sie gefunden.}
+Zu diesem Satz existiert eine Fußnote.\footnote{Großartig! Du hast sie gefunden.} Sieh nach, ob du sie finden kannst.
 
 
 \section{Quellenangabe}
 
+Dieser Abschnitt zeigt, wie in \latex auf literarische Quellen verwiesen werden kann. Indem diese Funktionalitäten genutzt werden, ist \latex des Weiteren in der Lage, automatisch ein Literaturverzeichnis zu erstellen.
+
+Bevor die Befehle zum Verweisen auf Literaturquellen erläutert werden, wird die dafür nötige Konfiguration im Editor TeXworks dargestellt. Falls ein anderer Editor für die Bearbeitung dieser Vorlage zum Einsatz kommt, kann der Unterabschnitt zur Konfiguration übersprungen werden.
+
+
+\subsection{Konfiguration in TeXworks}
+
+Diese Vorlage nutzt \code{biber} als Backend für das Verwalten von Literaturquellen und das erstellen von Literaturverweisen. Leider ist \code{biber} in TeXworks nicht vorkonfiguriert, aber dies kann mit wenig Arbeit nachgeholt werden.
+
+Um \code{biber} zu konfigurieren, öffnen Sie die Einstellungen unter \code{Bearbeiten} $\rightarrow$ \code{Einstellungen}. Hier klicken Sie auf den Reiter \code{Skripte}, so wie in Abbildung \vref{fig:konfiguration-biber-01} dargestellt.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{bilder/konfiguration-biber-01.png}
+	\caption{Konfiguration Literatur-Backend}
+	\label{fig:konfiguration-biber-01}
+\end{figure}
+
+Klicken Sie auf \code{Bearbeiten} und tragen Sie, in dem sich öffnenden Fenster, in der Zeile \code{Befehl/Datei} den Wert \enquote{\code{biber}} ein. Ihre vorgenommenen Einstellungen, sollten denen in Abbildung \vref{fig:konfiguration-biber-02} entsprechen.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{bilder/konfiguration-biber-02.png}
+	\caption{biber als Backend einsetzen}
+	\label{fig:konfiguration-biber-02}
+\end{figure}
+
+Nun können über die grafische Oberfläche des Editors TeXworks literarische Quellen verwaltet und referenziert werden.
+
+Es ist zu beachten, dass jedes mal wenn eine, noch nicht zuvor verwendete, literarische Quelle verwendet wird, folgende Anwendungen ausgeführt werden müssen: \code{pdfLaTeX} $\rightarrow$ \code{BibTeX} $\rightarrow$ \code{pdfLaTeX}. Dies ist ebenfalls in Abbildung \vref{fig:run-biber} zu sehen.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{bilder/run-biber-01.png}
+	\includegraphics[width=0.7\textwidth]{bilder/run-biber-02.png}
+	\includegraphics[width=0.7\textwidth]{bilder/run-biber-01.png}
+	\caption{Ausführung pdfLaTeX und BibTeX}
+	\label{fig:run-biber}
+\end{figure}
+
+
+\subsection{Literaturverweise}
+
 Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte. \cite{angenendt}
+
+\cite{angenendt,companion,vazques-de-parga,springer}
+\footcite{angenendt}
+
+\cite[5-12]{angenendt} % Quellverweis unformatiert
+
+\parencite{angenendt} % Quellverweis in Klammern
+
+\textcite{angenendt} % Quellverweis im Fließtext
+
+Quelle als Fußnote.\footcite{angenendt} % Quellverweis als Fußnote
+
+
+% Wörtliches Zitat
+
+% Längeres wörtliches Zitat
 
 
 \section{Quellcode}

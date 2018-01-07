@@ -3,8 +3,8 @@
 \documentclass[%
 	a4paper,%				A4 Papier
 	oneside,%				einseitig
-	bibliography=totoc,%		Literaturverzeichnis einfügen
-	%bibtotocnumbered,% 		Literaturverzeichnis einfügen nummeriert
+	bibliography=totoc,%	Literaturverzeichnis einfügen
+	%bibtotocnumbered,% 	Literaturverzeichnis einfügen nummeriert
 	listof=totoc,%			Verzeichnisse einbinden in toc
 	index=totoc,%			Index ins Verzeichnis einfügen
 	parskip=half,%			europäischer Satz mit abstand zwischen Absätzen
@@ -33,7 +33,7 @@
 %
 % Pakete Literarische Quellen und Literaturverzeichnis
 %
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=biber,style=authoryear]{biblatex} % Stile: authoryear, alphabetic
 \bibliography{literatur}
 
 %
