@@ -1,28 +1,35 @@
 % !TEX root =../main.tex
 
+
 \chapter{Beispiel}
 
 Hier etwas Text zur Einleitung. Ye ist meine absolute Lieblings Ye.
+
 
 \section{Ziel der Arbeit}
 
 Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte.
 
+
 \subsection{Motivation}
 
 Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte.
+
 
 \subsubsection{Meine Motivation}
 
 Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte.
 
+
 \paragraph{Ein Paragraph}
 
 Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte.
 
+
 \subparagraph{Ein Unterparagraph}
 
 Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte.
+
 
 \section{Textauszeichnung (logisches Markup)}
 
@@ -31,6 +38,7 @@ Es können beliebig viele Befehle definiert werden, um Text besonders hervorzuhe
 \emph{Hervorgehobener Text}
 
 \code{Begriffe aus dem Quellcode}
+
 
 \section{Aufzählungen}
 
@@ -50,18 +58,41 @@ Nummerierte Aufzählung.
 	\item Dritter Punkt
 \end{enumerate}
 
+
 \section{Abbildungen}
 
 In der Abbildung \vref{fig:wursthund} ist der so genannte Wursthund in seiner natürlichen Umgebung zu sehen.
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=10cm]{bilder/wursthund.jpg}
+	\includegraphics[width=0.7\textwidth]{bilder/wursthund.jpg}
 	\caption{Wursthund}
 	\label{fig:wursthund}
 \end{figure}
 
+
 \section{Tabellen}
+
+In diesem Abschnitt wird das Erstellen von Tabellen in \latex erläutert. Bevor das Erstellen der eigentlichen Tabellen erläutert wird, wird ein Hinweis zur Konfiguration des Texteditors TeXworks gegeben. Dieser ist optional und ist für die Nutzung dieser Vorlage nicht notwendig.
+
+Anschließend wird anhand von Beispielen aufgezeigt, wie Tabellen mit variabler und fester Spaltenbreite erzeugt werden. Darüber hinaus wird dargestellt wie lange Tabellen, die sich über mehrere Seiten erstrecken, erstellt werden können.
+
+
+\subsection{Konfiguration TeXworks}
+
+Um Tabellen im Quellcode lesbar formatieren zu können, ist es zu empfehlen eine Editor-Schriftart mit fester breite zu verwenden.
+
+Hierfür muss lediglich in TeXworks unter \code{Bearbeiten} $\rightarrow$ \code{Einstellungen} der Einstellungsdialog geöffnet werden. Hier kann in dem Reiter \code{Editor}, eine Schriftart ausgewählt werden. Schriftarten mit fester breite enthalten meistens das Wort \emph{Mono} im Namen. Eine geeignete Schriftart zur Verwendung in TeXworks ist \code{Ubuntu Mono}. Abbildung \vref{fig:einstellungen-schriftart} zeigt den Einstellungsdialog zur Auswahl der Schriftarten.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{bilder/einstellungen-schriftart.png}
+	\caption{Einstellungsdialog für Schriftart in TeXworks}
+	\label{fig:einstellungen-schriftart}
+\end{figure}
+
+
+\subsection{Tabellen mit variabler Spaltenbreite}
 
 Ein Beispiel für eine Tabelle, mit variabler Spaltenbreite, ist durch Tabelle \vref{tab:variable-breite} dargestellt.
 
@@ -79,6 +110,9 @@ Hamburg         & alle 5\,h    & 5:20 \\
 \caption{Tabelle mit variabler Spaltenbreite}
 \label{tab:variable-breite}
 \end{table}
+
+
+\subsection{Tabellen mit fester Spaltenbreite}
 
 Ein Beispiel für eine Tabelle, mit fester Spaltenbreite, ist durch Tabelle \vref{tab:feste-breite} dargestellt.
 
@@ -102,6 +136,9 @@ Daten              & Daten\\
 \caption{Tabelle mit fester Spaltenbreite}
 \label{tab:feste-breite}
 \end{table}
+
+
+\subsection{Tabellen über mehrere Seiten}
 
 Eine lange Tabelle, welche sich über mehrere Seiten erstrecken kann ist in Tabelle \ref{tab:lange-tabelle} dargestellt.
 
@@ -128,6 +165,7 @@ Eine lange Tabelle, welche sich über mehrere Seiten erstrecken kann ist in Tabe
 \label{tab:lange-tabelle}
 \end{longtable}
 
+
 \section{Verweise}
 
 Es existieren mehrere Arten auf Objekte zu verweisen.
@@ -140,6 +178,7 @@ Seitenzahl: \pageref{fig:wursthund}
 
 Relative Seitenzahl: \vpageref{fig:wursthund}
 
+
 \section{Beschreibungsumgebung}
 
 \begin{description}
@@ -147,12 +186,15 @@ Relative Seitenzahl: \vpageref{fig:wursthund}
 \item[Begriff Nummer 2] Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte.
 \end{description}
 
+
 \section{Fußnoten}
 
 Zu diesem Satz existiert eine Fußnote. Sieh nach, ob du sie finden kannst.\footnote{Großartig! Du hast sie gefunden.}
 
+
 \section{Quellenangabe}
 
 Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte. \cite{angenendt}
+
 
 \section{Quellcode}
