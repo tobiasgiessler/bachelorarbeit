@@ -69,6 +69,38 @@
 \newcommand{\rtab}{\raggedleft\arraybackslash} % Tabellenabschnitt rechtsbündig
 
 %
+% Paket um Quellcode im Dokument zu formattieren
+%
+\usepackage{scrhack}
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{colBackround}{rgb}{0.753,0.753,0.753}
+\definecolor{colKeys}{rgb}{0,0,0}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{0,0,0}
+\definecolor{colString}{rgb}{0,0,0}
+\lstset{%
+    float=htbp,%
+    basicstyle=\texttt\small, %
+    identifierstyle=\color{colIdentifier}, %
+    keywordstyle=\color{colKeys}\textbf, %
+    stringstyle=\color{colString}\textit, %
+    commentstyle=\color{colComments}\textit, %
+    columns=flexible, %
+   tabsize=4, %
+    frame=single, %
+    extendedchars=true, %
+    showspaces=false, %
+    showstringspaces=false, %
+    numbers=left, %
+    numberstyle=\tiny, %
+    breaklines=true, %
+    backgroundcolor=\color{colBackround}, %
+    breakautoindent=true, %
+    captionpos=b%
+}
+
+%
 % Paket für Links innerhalb des PDF-Dokuments
 % (hyperref muss unbedingt vor harvard geladen werden)
 %

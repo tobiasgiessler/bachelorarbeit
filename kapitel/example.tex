@@ -237,19 +237,14 @@ Es ist zu beachten, dass jedes mal wenn eine, noch nicht zuvor verwendete, liter
 
 \subsection{Literaturverweise}
 
-Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet. Da muss wesentlich mehr Produktaussage rein. Ja, wir finden auch, dass man über die Copy noch mal reden sollte. \cite{angenendt}
+Um die Quellenangabe für einen ganzen Absatz zu setzen, muss lediglich die Quellenangabe, an das Ende des Absatzes geschrieben werden. So wie hier.\\
+\parencite[3-5]{angenendt}
 
-\cite{angenendt,companion,vazques-de-parga,springer}
-\footcite{angenendt}
+Quellenangaben können alternativ auch als Fußnoten platziert werden.\footcite[7-14]{angenendt}
 
-\cite[5-12]{angenendt} % Quellverweis unformatiert
+Quellenangaben können natürlich auch im Fließtext auftauchen. Die würde dann wie folgt aussehen: Laut \textcite[51]{angenendt} ist die Links-Rekursion der Rechts-Rekursion vorzuziehen.
 
-\parencite{angenendt} % Quellverweis in Klammern
-
-\textcite{angenendt} % Quellverweis im Fließtext
-
-Quelle als Fußnote.\footcite{angenendt} % Quellverweis als Fußnote
-
+Abschließend kann eine Quellenangabe auch ohne spezielle Formattierung ausgegeben werden. Dies sollte man aber nur tun, wenn keine der vorherigen Methoden passend erscheint. \cite[100-101]{angenendt}
 
 % Wörtliches Zitat
 
@@ -257,3 +252,13 @@ Quelle als Fußnote.\footcite{angenendt} % Quellverweis als Fußnote
 
 
 \section{Quellcode}
+
+Listing \vref{lst:hello-world} zeigt ein Beispiel für einen Quellcodeausschnitt in \latex.
+
+\begin{lstlisting}[language=Java, caption={Hello World in Java}, label=lst:hello-world]
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+	}
+}
+\end{lstlisting}
