@@ -1,50 +1,64 @@
 % !TEX root =../main.tex
 
-\newcommand{\trtitleone}{Web3D, X3D, WebGL}
-\newcommand{\trtitletwo}{} 
-\newcommand{\trtype}{Bachelorthesis}
-\newcommand{\trauthor}{Ye Li}
-\newcommand{\trstrasse}{Brauhausstraße11}
+\newcommand{\trtitleone}{Cooperative Social Commerce}
+\newcommand{\trtitletwo}{Social Commerce als Grundlage für kooperatives Einkaufen}
+\newcommand{\trtype}{Bachelorarbeit zur Erlangung des akademischen Grades}
+\newcommand{\trabschluss}{Bachelor of Science}
+\newcommand{\trauthor}{Li, Ye}
+\newcommand{\trstrasse}{Hauptstraße 1}
 \newcommand{\trmatrikelnummer}{123456}
-\newcommand{\trort}{04109 Leipzig}
+\newcommand{\trplz}{04109}
+\newcommand{\trort}{Leipzig}
+\newcommand{\tremail}{maxmustermann@email.de}
+\newcommand{\trtelefon}{012345 67890}
 %\newcommand{\trgeb}{1. März 1985}
-%\newcommand{\trfachgebiet}{Wirtschaftsinformatik}
-\newcommand{\trfachbereich}{Wirtschaftsinformatik}
 \newcommand{\truni}{Universität Leipzig}
+\newcommand{\trfakultaet}{Wirtschaftswissenschaftliche Fakultät}
+\newcommand{\trfachbereich}{Wirtschaftsinformatik}
+\newcommand{\trstudiengang}{Wirtschaftsinformatik}
+\newcommand{\trprofessor}{Pofessor Max Mustermann}
+
 %\newcommand{\trpara}{gemäß §24, §25 und §26 der Prüfungsordnung vom 14.Januar 1998}
 \newcommand{\trdate}{\today}
 
 % Titelseite ohne Seitennummer
-%\thispagestyle{empty}
+\thispagestyle{empty}
 % Titelseite mit Seitennummer
-\thispagestyle{plain}
+%\thispagestyle{plain}
 
-% Kopfzeile mit Logos.
-% Eventuell die \hspace{} je nach Logogröße anpassen
-\begin{tabular}{lcr}
-  \hspace{4.3cm}
-  \includegraphics[scale=1]{bilder/logo.png}\\
-  %\includegraphics[scale=0.6]{bilder/logo_de.jpg}\\
-\end{tabular}
+\truni\\
+\trfakultaet\\
+\trfachbereich\\
+\trprofessor
 
-\hrulefill
+\vspace{3cm}
 
-\vspace{2cm}
 \begin{center}
-  \textbf{\LARGE \trtitleone}\\[0.1cm]
-  %\textbf{\trtitletwo}
+	Thema\\[1cm]
+	\textbf{\LARGE \trtitleone}\\[0.1cm]
+	\textbf{\large \trtitletwo}
 \end{center}
-\vspace{4cm}
+
+\vspace{0.2cm}
 
 \begin{center}
-  \textbf{\trtype} \\
-  %\trpara \\
-  \truni\\
-  Fachbereich \trfachbereich \\[2.5cm]
-  Erstellt von:\\
-  \textbf{\trauthor}\\
-  Matrikel-Nr.: \trmatrikelnummer
+  \trtype \\
+  \trabschluss~--~\trstudiengang \\
 \end{center}
 
 \vfill
-\hrulefill
+
+\begin{table}[htbp]
+\begin{tabular}{l l}
+vorgelegt von: & \trauthor \\
+Matrikelnummer: & \trmatrikelnummer \\
+E-Mail-Adresse: & \tremail \\
+Telefonnummer: & \trtelefon \\
+Anschrift: & \trstrasse \\
+& \trplz~\trort \\
+\end{tabular}
+\end{table}
+
+\vspace{0.25cm}
+
+\trort, den \today
