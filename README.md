@@ -1,20 +1,20 @@
 # bachelorarbeit
 LaTeX-Vorlage für Bachelorarbeit
 
-# Setup Git unter Ubuntu
+# Git installieren unter Ubuntu 18.04
 
 ```
-sudo apt install git
-ssh-keygen
+sudo apt install git -y
+sudo apt install git-gui -y
+sudo apt install gitk -y
+sudo apt install aspell-de -y
+\#ssh-keygen
 ...
 ```
 
-# Setup LaTeX unter Ubuntu
+# LaTeX installieren unter Ubuntu 18.04
 
 ```
-sudo apt install texlive-full
-sudo apt install texworks
-sudo apt install biber
-sudo ln -s /usr/share/hunspell/de_DE.dic /usr/share/myspell/dicts/
-sudo ln -s /usr/share/hunspell/de_DE.aff /usr/share/myspell/dicts/
+sudo apt install texlive-full -y
+sudo apt install texworks -y
 ```
