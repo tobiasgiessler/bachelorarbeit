@@ -201,30 +201,11 @@ Bevor die Befehle zum Verweisen auf Literaturquellen erläutert werden, wird die
 
 \subsection{Konfiguration in TeXworks}
 
-Diese Vorlage nutzt \code{biber} als Backend für das Verwalten von Literaturquellen und das erstellen von Literaturverweisen. Leider ist \code{biber} in TeXworks nicht vorkonfiguriert, aber dies kann mit wenig Arbeit nachgeholt werden.
+Diese Vorlage nutzt \code{Biber} als Backend für das Verwalten von Literaturquellen und das erstellen von Literaturverweisen.
 
-Um \code{biber} zu konfigurieren, öffnen Sie die Einstellungen unter \code{Bearbeiten} $\rightarrow$ \code{Einstellungen}. Hier klicken Sie auf den Reiter \code{Skripte}, so wie in Abbildung \vref{fig:konfiguration-biber-01} dargestellt.
+Es ist zu beachten, dass jedes mal wenn eine, noch nicht zuvor verwendete, literarische Quelle verwendet wird, folgende Anwendungen ausgeführt werden müssen: \code{pdfLaTeX} $\rightarrow$ \code{Biber} $\rightarrow$ \code{pdfLaTeX}. Dies ist in Abbildung \vref{fig:run-biber} zu sehen.
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\textwidth]{bilder/konfiguration-biber-01.png}
-	\caption{Konfiguration Literatur-Backend}
-	\label{fig:konfiguration-biber-01}
-\end{figure}
-
-Klicken Sie auf \code{Bearbeiten} und tragen Sie, in dem sich öffnenden Fenster, in der Zeile \code{Befehl/Datei} den Wert \enquote{\code{biber}} ein. Ihre vorgenommenen Einstellungen, sollten denen in Abbildung \vref{fig:konfiguration-biber-02} entsprechen.
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\textwidth]{bilder/konfiguration-biber-02.png}
-	\caption{biber als Backend einsetzen}
-	\label{fig:konfiguration-biber-02}
-\end{figure}
-
-Nun können über die grafische Oberfläche des Editors TeXworks literarische Quellen verwaltet und referenziert werden.
-
-Es ist zu beachten, dass jedes mal wenn eine, noch nicht zuvor verwendete, literarische Quelle verwendet wird, folgende Anwendungen ausgeführt werden müssen: \code{pdfLaTeX} $\rightarrow$ \code{BibTeX} $\rightarrow$ \code{pdfLaTeX}. Dies ist ebenfalls in Abbildung \vref{fig:run-biber} zu sehen.
-
+% TODO: Abbildungen für Ubuntu 18.04 überarbeiten.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\textwidth]{bilder/run-biber-01.png}
