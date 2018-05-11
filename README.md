@@ -8,7 +8,7 @@ sudo apt install git -y
 sudo apt install git-gui -y
 sudo apt install gitk -y
 sudo apt install aspell-de -y
-\#ssh-keygen
+#ssh-keygen
 ...
 ```
 
