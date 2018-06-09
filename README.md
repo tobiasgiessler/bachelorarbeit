@@ -9,6 +9,7 @@ sudo apt install git-gui -y
 sudo apt install gitk -y
 sudo apt install aspell-de -y
 #ssh-keygen
+#git config --global core.editor "emacs"
 ...
 ```
 
